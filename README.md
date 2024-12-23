@@ -32,35 +32,57 @@ CSS-On-Line is a Visual Studio Code extension that transforms your CSS into a ne
 ## Example
 ### Before
 ```css
-#back {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: tomato;
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-#back .inFoot {
-  height: 100%;
-  width: calc(100% / 3);
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
 }
-@media (max-width: 500px) {
-  #back {
-    background-color: #d17777;
-    margin-top: 10px;
+
+.nav {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+@media (min-width: 70em) { /* 70em=1120px */
+  .container {
+    max-width: 1120px;
+  }
+  .content {
+    display: flex; /* Example: Implement a two-column layout */
+    gap: 20px;
+  }
+  .sidebar { /* Assuming you have a sidebar */
+    flex: 1;
+  }
+
+  .main-content { /* Assuming you have a main content area */
+    flex: 2;
   }
 }
 ```
 
 ### After
 ```css
-#back { width: 100%; height: 100%; overflow: hidden; background-color: tomato; }
-#back .inFoot { height: 100%; width: calc(100% / 3); }
-@media (max-width: 500px) {
-  #back { background-color: #d17777; margin-top: 10px; }
+.container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
+.header { background-color: #333; color: #fff; padding: 20px 0; text-align: center; }
+.nav { background-color: #fff; padding: 10px 0; border-bottom: 1px solid #ddd; }
+@media (min-width: 70em) {
+.container { max-width: 1120px; }
+.content { display: flex; gap: 20px; }
+.sidebar { flex: 1; }
+.main-content { flex: 2; }
 }
 ```
 
 ## Contributing
-Feel free to submit issues or feature requests on the [GitHub repository](https://github.com/yourusername/css-on-line).
+Feel free to submit issues or feature requests on the [GitHub repository](https://github.com/jasubal/css-on-line).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
