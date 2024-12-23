@@ -16,6 +16,10 @@
       "onLanguage:php"
   ],
   "main": "./out/extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasubal/css-one-line.git"
+},
   "contributes": {
       "commands": [
           {
