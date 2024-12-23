@@ -82,7 +82,7 @@ CSS-On-Line is a Visual Studio Code extension that transforms your CSS into a ne
 ```
 
 ## Contributing
-Feel free to submit issues or feature requests on the [GitHub repository](https://github.com/jasubal/css-on-line).
+Feel free to submit issues or feature requests on the [GitHub repository](https://github.com/jasubal/css-one-line).
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
